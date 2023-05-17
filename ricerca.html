@@ -21,6 +21,16 @@
         background-size: cover;
       }
       </style>    
+
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DF3ZS6033R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DF3ZS6033R');
+</script>
    
     </head>
 
@@ -100,10 +110,10 @@
       
           <div class="cella">
           <form> 
-            <input type="checkbox" name="opzione1" value="festival" class="tipo" id="demos">
-            <label>#festival</label><br>
+            <input type="checkbox" name="opzione1" value="festival" class="tipo">
+            <label id="demo1">#festival</label><br>
             <input type="checkbox" id="opzione2" name="opzione2" value="tour" class="tipo">
-            <label for="opzione2">#tour</label><br>
+            <label id="demo2">#tour</label><br>
             <input type="checkbox" id="opzione3" name="opzione3" value="orchestra" class="tipo">
             <label for="opzione3">#orchestra</label><br>
             <input type="checkbox" id="opzione3" name="opzione4" value="dj" class="tipo">
@@ -113,15 +123,21 @@
             
             <button class="bottonedue" onclick="change_text()">Aggiorna</button>
           
-            
+            <script>
+              function change_text(){
+                  document.getElementById("demo1").innerHTML = "ciao";
+              }
+              </script>
+
+            <script>
+                function change_text(){
+                  document.getElementById("demo2").innerHTML = "hello";
+              }
+            </script>   
 
         </div>
 
-        <script>
-          function change_text(){
-              document.getElementById("demos").innerHTML = "ciao";
-          }
-          </script>
+        
 
         
       
