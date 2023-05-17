@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Vibes Hunter</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b79835c70c.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="icon" href="immagini/icona.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@700&family=Tinos&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/hover.css" rel="stylesheet">
+
+<style>
+      body {
+        background-image: url(immagini/sfondo3.avif);
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+      }
+      </style>    
+   
+    </head>
+
+  <body class="container-fluid">
+
+<header> 
+
+
+
+
+    <ul>
+<div class="topnav">
+    <a href="documentazione.html">Documentazione</a>
+    <a class="active" href="login.html">Login</a></li>
+    <a href="ricerca.html">Ricerca</a></li>
+    <a href="index.html">Home</a>
+    
+    
+    
+  </div>
+</ul>
+</nav>
+
+</header>
+
+<div style="float: left;">
+  <section class="login"> 
+    <h2 class="hvr-underline-from-left"> Do you want keep following your vibe?</h2>
+    <br></br>
+  
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+</section>
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        
+      </div>
+    
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+       
+      </div>
+    </form>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+</div>
+
+
+
+<div style="float: left;">
+ <section class="login"> 
+  
+  <h2 class="hvr-underline-from-left">Or do you want to join us?</h2>
+<br></br>
+
+  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+</section>
+  <div id="id02" class="modala">
+    <span onclick="document.getElementById('id02').style.display='none'" class="closea" title="Close Modal">&times;</span>
+    <form class="modala-content" action="/action_page.php">
+      <div class="container">
+        <h1>Sign Up</h1>
+        
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        
+      
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtna">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id02');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+</div>
+
+<div class="explore">
+<h1>EXPLORE. LISTEN. VOTE.</h1>
+
+</div>
+
+
+
+
+<footer> 
+  <div class="icone">
+  
+    <a href="https://www.instagram.com/_vibes.hunter/" target="blank">
+      <i class="fa-brands fa-instagram fa-2xl" style="color: #41fa6f;"></i>
+      <a href="https://www.facebook.com/profile.php?id=100092471121866" target="blank">
+      <i class="fa-brands fa-facebook fa-2xl" style="color: #41fa6f;"></i>
+    </div>
+
+</footer>
+
+  </body>
+</html>

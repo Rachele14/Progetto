@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Vibes Hunter</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b79835c70c.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="icon" href="immagini/icona.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@700&family=Tinos&display=swap" rel="stylesheet">
+
+    <link href="css/hover.css" rel="stylesheet">
+
+<style>
+      body {
+        background-image: url(immagini/sfondo3.avif);
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+      }
+      </style>    
+   
+    </head>
+
+  <body class="container-fluid">
+
+<header> 
+
+    <ul>
+    <div class="topnav">
+    <a href="documentazione.html">Documentazione</a>
+    <a href="login.html">Login</a></li>
+    <a class="active" href="ricerca.html">Ricerca</a></li>
+    <a href="index.html">Home</a>
+    </div>
+</ul>
+</nav>
+
+</header>
+
+
+<h1></h1>
+
+<section>
+<section class="containermenu">
+  <div class="menu">
+    <div class="cella"> 
+      <label for="artista" class="tipo">Cantante:</label>
+      <select name="artista" id="artista" class="selezione">
+        
+          <option value="florence">Florence + The Machine</option>
+          <option value="aurora">Aurora</option>
+          <option value="lana">Lana del Rey</option>
+          
+      </select>
+      
+        <input type="submit" value="Cerca" class="bottonedue">
+      </div>
+      
+      <div class="cella"> 
+      <label for="luogo" class="tipo">Luogo:</label>
+      <select name="luogo" id="luogo" class="selezione">
+        
+          <option value="milano">Milano</option>
+          <option value="roma">Roma</option>
+          <option value="bologna">Bologna</option>
+          
+      </select>
+      
+        <input type="submit" value="Cerca" class="bottonedue">
+      </div>
+      
+      <div class="cella"> 
+        <label for="genere" class="tipo">Genere:</label>
+        <select name="genere" id="genere" class="selezione">
+          
+            <option value="pop">Pop</option>
+            <option value="indie">Indie</option>
+            <option value="rock">Rock</option>
+            
+        </select>
+        
+          <input type="submit" value="Cerca" class="bottonedue">
+        </div>
+      
+        <div class="cella"> 
+          <label for="valutazione" class="tipo">Valutazione:</label>
+          <select name="valutazione" id="valutazione" class="selezione">
+            
+              <option value="cinque">5</option>
+              <option value="quattro">4</option>
+              <option value="tre">3+</option>
+              
+          </select>
+          
+            <input type="submit" value="Cerca" class="bottonedue">
+        </div>
+      
+          <div class="cella">
+          <form> 
+            <input type="checkbox" name="opzione1" value="festival" class="tipo" id="demos">
+            <label>#festival</label><br>
+            <input type="checkbox" id="opzione2" name="opzione2" value="tour" class="tipo">
+            <label for="opzione2">#tour</label><br>
+            <input type="checkbox" id="opzione3" name="opzione3" value="orchestra" class="tipo">
+            <label for="opzione3">#orchestra</label><br>
+            <input type="checkbox" id="opzione3" name="opzione4" value="dj" class="tipo">
+            <label for="opzione3">#dj</label><br>
+
+            <input type="submit" value="Cerca" class="bottonedue" class="tipo">
+            
+            <button class="bottonedue" onclick="change_text()">Aggiorna</button>
+          
+            
+
+        </div>
+
+        <script>
+          function change_text(){
+              document.getElementById("demos").innerHTML = "ciao";
+          }
+          </script>
+
+        
+      
+      <div class="cella">
+          <form>
+            <label for="dataconcerto" class="tipo">Data:</label>
+            <input type="date" id="dataconcerto" name="dataconcerto" class="selezione">
+            <input type="submit" value="Cerca" class="bottonedue">
+          </form>
+        </div>
+      
+  </div>
+  <div class="immagineuno"><img src="immagini/forum.jpg" alt="san siro" width="200" height="200"></div>
+  <div class="immaginedue"><img src="immagini/arena.jpg" alt="san siro" width="200" height="200"></div>
+  <div class="immaginetre"><img src="immagini/pala.jpg" alt="san siro" width="200" height="200"></div>
+  <div class="testouno">
+    <h2>Forum Assago, Milano</h2>
+    <h2>Florence+the Machine</h2>
+    <h3>How big, how blue, how beautiful</h3>
+    <h3>21/12/2015</h3>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+  </div>
+
+  <div class="testodue">
+    <h2>Unipol Arena, Bologna</h2>
+    <h2>Florence+the Machine</h2>
+    <h3>How big, how blue, how beautiful</h3>
+    <h3>13/04/2016</h3>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+  </div>
+
+  <div class="testotre">
+    <h2>Pala Alpitour, Torino</h2>
+    <h2>Florence+the Machine</h2>
+    <h3>How big, how blue, how beautiful</h3>
+    <h3>14/04/2016</h3>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+    <i class="fa-solid fa-star fa-xl" style="color: gold;"></i>
+  </div>
+
+  <div class="testoquattro">
+    <h2>No other results</h2> 
+  </div>
+  <div class="testocinque">
+    <i class="fa-solid fa-spinner fa-spin-pulse fa-2xl" style="color:#000000;" data-fa-transform="right-10px "></i>
+  </div>
+  
+  </div>
+</section>
+</section>
+
+<div class="new">
+  
+  <a href="login.html" class="hvr-sweep-to-right">BE THE FIRST TO ADD A NEW EXPERIENCE!</a>
+  <a href="login.html" target="blank">
+  <i class="fa-solid fa-plus"style="color: #41fa6f;"></i></a>
+  
+  </div>
+
+<p class='sfondo' style="background-image: url('immagini/sfondo2.jpg');"></p>
+
+<footer> 
+
+  <div class="icone">
+  
+    <a href="https://www.instagram.com/_vibes.hunter/" target="blank">
+      <i class="fa-brands fa-instagram fa-2xl" style="color: #41fa6f;"></i>
+      <a href="https://www.facebook.com/profile.php?id=100092471121866" target="blank">
+      <i class="fa-brands fa-facebook fa-2xl" style="color: #41fa6f;"></i>
+    </div>
+</footer>
+
+  </body>
+</html>
