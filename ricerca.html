@@ -61,8 +61,10 @@
       <select name="artista" id="artista" class="selezione">
         
           <option value="florence">Florence + The Machine</option>
-          <option value="aurora">Aurora</option>
-          <option value="lana">Lana del Rey</option>
+          <option value="caparezza">Caparezza</option>
+          <option value="imagine">Imagine Dragons</option>
+          <option value="lana">Lana del rey</option>
+          <option value="stones">Rolling Stones</option>
           
       </select>
       
@@ -72,10 +74,14 @@
       <div class="cella"> 
       <label for="luogo" class="tipo">Luogo:</label>
       <select name="luogo" id="luogo" class="selezione">
-        
+
+          <option value="luogo">Luogo</option>
           <option value="milano">Milano</option>
-          <option value="roma">Roma</option>
           <option value="bologna">Bologna</option>
+          <option value="napoli">Napoli</option>
+          <option value="roma">Roma</option>
+          <option value="torino">Torino</option>
+          
           
       </select>
       
@@ -88,7 +94,11 @@
           
             <option value="pop">Pop</option>
             <option value="indie">Indie</option>
+            <option value="metal">Metal</option>
+            <option value="rap">Rap</option>
             <option value="rock">Rock</option>
+            
+            
             
         </select>
         
@@ -99,41 +109,43 @@
           <label for="valutazione" class="tipo">Valutazione:</label>
           <select name="valutazione" id="valutazione" class="selezione">
             
+              <option value="valutazione">Valutazione</option>
               <option value="cinque">5</option>
               <option value="quattro">4</option>
               <option value="tre">3+</option>
+
+              <input type="submit" value="Cerca" class="bottonedue">
               
           </select>
           
-            <input type="submit" value="Cerca" class="bottonedue">
+            
         </div>
       
           <div class="cella">
           <form> 
             <input type="checkbox" name="opzione1" value="festival" class="tipo">
-            <label id="demo1">#festival</label><br>
+            <label id="demo1" for="opzione1">#festival</label><br>
             <input type="checkbox" id="opzione2" name="opzione2" value="tour" class="tipo">
-            <label id="demo2">#tour</label><br>
+            <label id="demo2" for="opzione2">#tour</label><br>
             <input type="checkbox" id="opzione3" name="opzione3" value="orchestra" class="tipo">
-            <label for="opzione3">#orchestra</label><br>
-            <input type="checkbox" id="opzione3" name="opzione4" value="dj" class="tipo">
-            <label for="opzione3">#dj</label><br>
+            <label id="demo3" for="opzione3">#orchestra</label><br>
+            <input type="checkbox" id="opzione4" name="opzione4" value="dj" class="tipo">
+            <label id="demo4" for="opzione4">#dj</label><br>
 
             <input type="submit" value="Cerca" class="bottonedue" class="tipo">
             
-            <button class="bottonedue" onclick="change_text()">Aggiorna</button>
+            <button class="bottonedue" onclick="change_text(); return false">Aggiorna</button>
           
             <script>
               function change_text(){
-                  document.getElementById("demo1").innerHTML = "ciao";
+                  document.getElementById("demo1").innerHTML = "#musicaward";
+                  document.getElementById("demo2").innerHTML = "#talent";
+                  document.getElementById("demo3").innerHTML = "#coverband";
+                  document.getElementById("demo4").innerHTML = "#show";
               }
               </script>
 
-            <script>
-                function change_text(){
-                  document.getElementById("demo2").innerHTML = "hello";
-              }
-            </script>   
+              
 
         </div>
 
@@ -187,7 +199,7 @@
   </div>
 
   <div class="testoquattro">
-    <h2>No other results</h2> 
+    <h2>Nessun altro risultato</h2> 
   </div>
   <div class="testocinque">
     <i class="fa-solid fa-spinner fa-spin-pulse fa-2xl" style="color:#000000;" data-fa-transform="right-10px "></i>
@@ -199,7 +211,7 @@
 
 <div class="new">
   
-  <a href="login.html" class="hvr-sweep-to-right">BE THE FIRST TO ADD A NEW EXPERIENCE!</a>
+  <a href="login.html" class="hvr-sweep-to-right">DIVENTA IL PRIMO AD AGGIUNGERE UNA NUOVA ESPERIENZA!</a>
   <a href="login.html" target="blank">
   <i class="fa-solid fa-plus"style="color: #41fa6f;"></i></a>
   
